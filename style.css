@@ -1,0 +1,19 @@
+.store {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.div2 {
+	float: left;
+	display: inline-block;
+}
+.div3 {
+	float: right;
+	display: inline-block;
+	padding: 5px;
+}
+.heading td {
+	background: #E7EFEF;
+}
+.address, .product {
+	border-collapse: collapse;
+}
