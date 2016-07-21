@@ -10,6 +10,16 @@ var style = '.store {width: 100%;margin-bottom: 20px;}.div2 {float: left;display
 
 
 
+/*Функция генерации ключа на который будут смещаться символы имен классов, для запутывания названия.
+Каждая буква в слове смещается на одно и тоже число(ключ).  Число будет браться от 1 до 10.
+
+*/
+function generateKey(m,n)
+{
+  m = parseInt(m);
+  n = parseInt(n);
+  return Math.floor( Math.random() * (n - m + 1) ) + m;
+}
 
 
 
@@ -47,7 +57,7 @@ function delCharacters(data){
 //Функция обфускатор
 function obfuscation(word){	
 	var symbol = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
-	var num = 6;
+	var numkey = generateKey(1,10);//Вызываем функцию и присваиваем возвращаемое значение в переменную. 
 	var newnameclass= '';
 	var temp=0;
 	for(var i=0; i<word.length; i++){	
