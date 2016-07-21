@@ -69,13 +69,13 @@ function obfuscation(word){
 	   
 	   else if(i==0 && symbol.indexOf(word[i]) <52) 
 	   {
-		    temp=symbol.indexOf(word[i])+num;
+		    temp=symbol.indexOf(word[i])+numkey;
 	       newnameclass+=symbol[temp];
 	     }  
 	   else{  
-	           temp = symbol.indexOf(word[i])+num;
+	           temp = symbol.indexOf(word[i])+numkey;
 				 if(symbol.indexOf(word[i]) > 63) {
-					temp = symbol.indexOf(word[i])+num;
+					temp = symbol.indexOf(word[i])+numkey;
 					newnameclass+=symbol[temp];
 				} else 
 				newnameclass+=symbol[temp];
